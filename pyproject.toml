@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kanimtool"
+version = "2024.11.05"
+dependencies = [
+    "pillow >= 11.0.0",
+    "numpy >= 2.0.0",
+]
+requires-python = ">=3.9"
+authors = [
+    { name = "Aaron Tsang" },
+]
+description = "tools to deal with kanim"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+keywords = ["moding"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/tsangwpx/kanimtool"
+Source = "https://github.com/tsangwpx/kanimtool"
+
+[project.scripts]
+kanimtool-make = "kanimtool.cli:make"
+kanimtool-inspect = "kanimtool.cli:inspect"
